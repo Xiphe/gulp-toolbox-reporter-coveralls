@@ -1,0 +1,19 @@
+{
+  "name": "gulp-toolbox-reporter-coveralls",
+  "version": "0.0.0",
+  "description": "report coverage to coveralls",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "toolbox",
+  "license": "MIT"
+}
