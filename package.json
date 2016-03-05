@@ -3,17 +3,35 @@
   "version": "0.0.0",
   "description": "report coverage to coveralls",
   "main": "index.js",
-  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Intended: no test specified\" && exit 0"
+  },
+  "keywords": [
+    "gulp",
+    "toolbox",
+    "coverage",
+    "coveralls",
+    "ootb"
+  ],
+  "bugs": "https://github.com/Xiphe/gulp-toolbox-reporter-coveralls/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xiphe/gulp-toolbox-reporter-coveralls.git"
+  },
+  "author": "Hannes Diercks <gulp-toolbox@xiphe.net>",
+  "license": "MIT",
+  "engines": {
+    "node": "^5.0.0"
+  },
+  "dependencies": {
+    "coveralls": "2.11.8",
+    "through2": "2.0.1"
+  },
+  "peer-dependencies": {
+    "gulp-toolbox-registry": "^0.1.0"
+  },
   "devDependencies": {
     "eslint": "^2.2.0",
     "eslint-config-airbnb": "^6.0.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "gulp"
-  ],
-  "author": "toolbox",
-  "license": "MIT"
+  }
 }
