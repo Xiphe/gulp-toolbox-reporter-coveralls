@@ -2,6 +2,8 @@
 
 const meta = require('./package.json');
 const coveralls = require('coveralls');
+const logger = require('gulplog');
+const chalk = require('chalk');
 const through2 = require('through2');
 
 module.exports = {
@@ -29,6 +31,7 @@ module.exports = {
           return cb();
         }
 
+        logger.info('now sending coverage report to coveralls.io...');
         coveralls.getBaseOptions((optionErr, someOptions) => {
           if (optionErr) {
             return next(optionErr);
@@ -57,6 +60,7 @@ module.exports = {
                     );
                   }
 
+                  logger.info(`${chalk.green('OK')}: reported to coveralls.io`);
                   return next();
                 }
               );
