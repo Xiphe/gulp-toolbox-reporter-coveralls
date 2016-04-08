@@ -21,7 +21,7 @@
   "author": "Hannes Diercks <gulp-toolbox@xiphe.net>",
   "license": "MIT",
   "engines": {
-    "node": "^5.0.0"
+    "node": ">= 4.1"
   },
   "dependencies": {
     "chalk": "1.1.3",
